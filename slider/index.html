@@ -6,11 +6,10 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body ng-app="slider">
-        <section>
-            <img src="img/cerveja1.jpg">
-            <p>Cervejinha Boa</p>
+        <section ng-controller="CarrosselController">
+            <img ng-src="{{imagemAtiva.src}}">
+            <p>{{imagemAtiva.texto}}</p>
         </section>
-
 
         <script src="js/angular.min.js"></script>
         <script src="js/app.js"></script>
