@@ -7,8 +7,7 @@
     </head>
     <body ng-app="contadores">
         <section ng-controller="ContadorController">
-            <span>{{valor}}</span>
-            {{nome}}
+            <span ng-click="incrementar()">{{valor}}</span>
         </section>
 
         <script src="js/angular.min.js"></script>
