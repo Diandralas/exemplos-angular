@@ -7,7 +7,9 @@
     </head>
     <body ng-app="quadrados">
         <section ng-controller="QuadradosController">
-            <div ng-repeat="quadrado in quadrados" ng-style="{'background-color': quadrado.cor}">
+            <div ng-repeat="quadrado in quadrados"
+            ng-style="{'background-color': quadrado.cor}"
+            ng-mouseover="alterarCor(quadrado)">
 
             </div>
         </section>
