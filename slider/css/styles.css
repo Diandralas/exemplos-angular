@@ -3,33 +3,46 @@ body{
     font-family: sans-serif;
 }
 
+section{
+    position: relative;
+}
+
 section img{
     width: 100%;
 }
 
 section p{
+    width: 100%;
     font-size: 40px;
     text-align: center;
     margin: 0;
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    text-shadow: 0 0 15px black;
 }
 
 section ul{
+    width: 100%;
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 10px;
 }
 
 section ul li{
     width: 10px;
     height: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     margin: 0 3px;
+    box-shadow: 0 0 15px black;
 }
 
 section ul li.ativo{
-    background-color: black;
+    background-color: white;
 }

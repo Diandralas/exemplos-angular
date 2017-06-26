@@ -3,19 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Quadrados</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body ng-app="slider">
         <section ng-controller="CarrosselController">
             <img ng-src="{{imagemAtiva.src}}">
 
+            <p>{{imagemAtiva.texto}}</p>
+
             <ul>
                 <li ng-repeat="imagem in imagens"
                     ng-class="{ativo: indice == $index}">
                 </li>
             </ul>
-
-            <p>{{imagemAtiva.texto}}</p>
         </section>
 
         <script src="js/angular.min.js"></script>
