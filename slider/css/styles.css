@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section img{
+    width: 100%;
+}
+
+section p{
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
