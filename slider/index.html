@@ -14,7 +14,8 @@
 
             <ul>
                 <li ng-repeat="imagem in imagens"
-                    ng-class="{ativo: indice == $index}">
+                    ng-class="{ativo: indice == $index}"
+                    ng-click="trocarImagem($index)">
                 </li>
             </ul>
         </section>

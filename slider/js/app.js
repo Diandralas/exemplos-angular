@@ -11,7 +11,7 @@ app.controller('CarrosselController', function($scope, $interval){
     $scope.indice = 0;
     $scope.imagemAtiva = $scope.imagens[$scope.indice];
 
-    $interval(function(){
+    var intervalo = $interval(function(){
         $scope.indice++;
 
         if($scope.indice == $scope.imagens.length){
@@ -20,4 +20,11 @@ app.controller('CarrosselController', function($scope, $interval){
 
         $scope.imagemAtiva = $scope.imagens[$scope.indice];
     }, 3000);
+
+    $scope.trocarImagem = function(i){
+        $scope.indice = i;
+        $scope.imagemAtiva = $scope.imagens[i];
+
+        $interval.cancel(intervalo);
+    }
 })
