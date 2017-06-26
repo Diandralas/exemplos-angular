@@ -8,11 +8,13 @@
     <body ng-app="slider">
         <section ng-controller="CarrosselController">
             <img ng-src="{{imagemAtiva.src}}">
+
             <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
+                <li ng-repeat="imagem in imagens"
+                    ng-class="{ativo: indice == $index}">
+                </li>
             </ul>
+
             <p>{{imagemAtiva.texto}}</p>
         </section>
 

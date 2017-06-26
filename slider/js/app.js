@@ -4,19 +4,20 @@ app.controller('CarrosselController', function($scope, $interval){
     $scope.imagens = [
         {src: "img/cerveja1.jpg", texto: "Cervejinha Boa"},
         {src: "img/cerveja2.jpg", texto: "Cervejinha Gelada"},
-        {src: "img/cerveja3.jpg", texto: "Cervejinha Maneira"}
+        {src: "img/cerveja3.jpg", texto: "Cervejinha Maneira"},
+        {src: "img/cerveja1.jpg", texto: "Cervejinha Show"}
     ];
 
-    var indice = 0;
-    $scope.imagemAtiva = $scope.imagens[indice];
-    
-    $interval(function(){
-        indice++;
+    $scope.indice = 0;
+    $scope.imagemAtiva = $scope.imagens[$scope.indice];
 
-        if(indice == $scope.imagens.length){
-            indice = 0;
+    $interval(function(){
+        $scope.indice++;
+
+        if($scope.indice == $scope.imagens.length){
+            $scope.indice = 0;
         }
 
-        $scope.imagemAtiva = $scope.imagens[indice];
+        $scope.imagemAtiva = $scope.imagens[$scope.indice];
     }, 3000);
 })

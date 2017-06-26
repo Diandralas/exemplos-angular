@@ -30,6 +30,6 @@ section ul li{
     margin: 0 3px;
 }
 
-section ul li.active{
+section ul li.ativo{
     background-color: black;
 }
