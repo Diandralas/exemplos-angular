@@ -9,7 +9,7 @@ app.controller('CarrosselController', function($scope, $interval){
 
     var indice = 0;
     $scope.imagemAtiva = $scope.imagens[indice];
-
+    
     $interval(function(){
         indice++;
 
