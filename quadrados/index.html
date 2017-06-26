@@ -5,12 +5,9 @@
         <title>Quadrados</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <body ng-app="quadrados">
+        <section ng-controller="QuadradosController">
+            <div ng-repeat="quadrado in quadrados">{{quadrado.cor}}</div>
         </section>
 
         <script src="js/angular.min.js"></script>
