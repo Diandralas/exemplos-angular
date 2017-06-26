@@ -4,14 +4,16 @@
         <meta charset="utf-8">
         <title>Quadrados</title>
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body ng-app="clientes">
-        <section>
+        <section ng-controller="ClientesController">
             <div class="formulario">
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Avatar">
+                <input type="text" placeholder="Nome" ng-model="dados.nome">
+                <input type="text" placeholder="E-mail" ng-model="dados.email">
+                <input type="text" placeholder="Avatar" ng-model="dados.imagem">
 
+                {{dados}}
                 <button>Salvar</button>
             </div>
 

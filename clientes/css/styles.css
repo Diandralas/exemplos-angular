@@ -9,6 +9,7 @@ section{
 
 .formulario{
     padding: 15px;
+    width: 50%;
 }
 
 .formulario input{
@@ -28,8 +29,10 @@ section{
     font-size: 16px;
 }
 
-.lista div{
-    height: 100px;
+.lista div:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .lista div img{
